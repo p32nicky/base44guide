@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 const SITE_URL = "https://base44guide.com";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   title: {
@@ -24,7 +26,6 @@ export const metadata: Metadata = {
     site: "@base44guide",
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  // Set NEXT_PUBLIC_GSC_ID in Vercel env vars to enable GSC verification
   ...(process.env.NEXT_PUBLIC_GSC_ID
     ? { verification: { google: process.env.NEXT_PUBLIC_GSC_ID } }
     : {}),
@@ -33,6 +34,19 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={geist.variable}>
+      <head>
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
+            </Script>
+          </>
+        )}
+      </head>
       <body className="min-h-screen bg-white text-gray-900 antialiased">
         <header className="border-b border-gray-100 bg-white sticky top-0 z-10">
           <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
