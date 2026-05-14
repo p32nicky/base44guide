@@ -1,0 +1,13 @@
+{
+  "slug": "base44-for-etsy-sellers-order-and-production-apps",
+  "title": "Base44 for Etsy Sellers: Order and Production Apps",
+  "metaDescription": "Learn about Base44 for Etsy Sellers: Order and Production Apps and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Base44 for Etsy Sellers: Order and Production Apps</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-14T03:48:20.783Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99722, Requested 1699. Please try again in 20m27.744s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

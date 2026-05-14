@@ -1,0 +1,13 @@
+{
+  "slug": "base44-competition-after-wix-deal-market-analysis",
+  "title": "Base44 Competition After Wix Deal: Market Analysis",
+  "metaDescription": "Learn about Base44 Competition After Wix Deal: Market Analysis and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Base44 Competition After Wix Deal: Market Analysis</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-14T03:48:32.983Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99708, Requested 1383. Please try again in 15m42.623999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
