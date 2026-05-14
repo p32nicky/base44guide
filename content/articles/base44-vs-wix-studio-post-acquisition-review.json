@@ -1,0 +1,13 @@
+{
+  "slug": "base44-vs-wix-studio-post-acquisition-review",
+  "title": "Base44 vs Wix Studio: Post-Acquisition Review",
+  "metaDescription": "Learn about Base44 vs Wix Studio: Post-Acquisition Review and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Base44 vs Wix Studio: Post-Acquisition Review</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-14T03:44:28.971Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10523, Requested 1494. Please try again in 85ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

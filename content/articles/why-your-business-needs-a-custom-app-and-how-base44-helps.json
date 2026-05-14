@@ -1,0 +1,13 @@
+{
+  "slug": "why-your-business-needs-a-custom-app-and-how-base44-helps",
+  "title": "Why Your Business Needs a Custom App (and How Base44 Helps)",
+  "metaDescription": "Learn about Why Your Business Needs a Custom App (and How Base44 Helps) and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Why Your Business Needs a Custom App (and How Base44 Helps)</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-14T03:46:41.819Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11914, Requested 1634. Please try again in 7.74s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

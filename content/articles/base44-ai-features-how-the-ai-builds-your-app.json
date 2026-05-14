@@ -1,0 +1,13 @@
+{
+  "slug": "base44-ai-features-how-the-ai-builds-your-app",
+  "title": "Base44 AI Features: How the AI Builds Your App",
+  "metaDescription": "Learn about Base44 AI Features: How the AI Builds Your App and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Base44 AI Features: How the AI Builds Your App</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-14T03:44:46.285Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10758, Requested 1492. Please try again in 1.25s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

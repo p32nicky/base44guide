@@ -1,0 +1,13 @@
+{
+  "slug": "build-a-saas-product-with-base44-step-by-step",
+  "title": "Build a SaaS Product with Base44: Step-by-Step",
+  "metaDescription": "Learn about Build a SaaS Product with Base44: Step-by-Step and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Build a SaaS Product with Base44: Step-by-Step</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-14T03:43:01.373Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10141, Requested 2310. Please try again in 2.255s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

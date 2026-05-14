@@ -1,65 +1,121 @@
-import Image from "next/image";
+import { getAllArticles } from "@/lib/articles";
+import type { Metadata } from "next";
+import Link from "next/link";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Base44 Reviews & Guides — Build Apps Without Code",
+  description:
+    "500+ in-depth articles, reviews, and tutorials about Base44 — the AI no-code platform anyone can use to build full-stack web apps.",
+};
+
+const AFFILIATE = "https://base44.pxf.io/c/2252709/2049275/25619?trafcat=base";
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Base44 Guide",
+  url: "https://base44guide.com",
+  description:
+    "Comprehensive guides, reviews, and tutorials for Base44 — the AI-powered no-code platform.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://base44guide.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Base44 Guide",
+  url: "https://base44guide.com",
+  logo: "https://base44guide.com/logo.png",
+};
+
+export default function HomePage() {
+  const articles = getAllArticles();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+      />
+    <div className="max-w-5xl mx-auto px-4 py-12">
+      {/* Hero */}
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          The Complete Base44 Resource Hub
+        </h1>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
+          Everything you need to know about Base44 — the AI-powered platform
+          that lets anyone build full-stack web apps without writing a single
+          line of code.
+        </p>
+        <a
+          href={AFFILIATE}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-full text-lg transition-colors"
+        >
+          Start Building with Base44 →
+        </a>
+      </div>
+
+      {/* What is Base44 callout */}
+      <div className="bg-orange-50 border border-orange-100 rounded-2xl p-8 mb-12 text-center">
+        <h2 className="text-2xl font-bold mb-3">What Is Base44?</h2>
+        <p className="text-gray-700 max-w-2xl mx-auto mb-4">
+          Base44 is an AI-powered no-code platform that builds complete web
+          applications from plain-language descriptions. Describe your idea,
+          and the AI creates a fully functional, hosted app — no coding, no
+          servers, no deployment headaches.
+        </p>
+        <a
+          href={AFFILIATE}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-orange-600 font-semibold hover:underline"
+        >
+          Try Base44 Free →
+        </a>
+      </div>
+
+      {/* Article grid */}
+      <h2 className="text-2xl font-bold mb-6">
+        {articles.length > 0
+          ? `${articles.length} Base44 Articles & Guides`
+          : "Articles Loading..."}
+      </h2>
+
+      {articles.length === 0 ? (
+        <div className="text-center py-16 text-gray-500">
+          <p className="text-lg mb-2">Articles are being generated.</p>
+          <p>Run the generation script and deploy again to populate this page.</p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      ) : (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {articles.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/articles/${article.slug}`}
+              className="block p-5 border border-gray-200 rounded-xl hover:border-orange-300 hover:shadow-sm transition-all group"
+            >
+              <h3 className="font-semibold text-gray-900 group-hover:text-orange-600 leading-snug mb-2">
+                {article.title}
+              </h3>
+              <p className="text-sm text-gray-500 line-clamp-2">
+                {article.metaDescription}
+              </p>
+            </Link>
+          ))}
         </div>
-      </main>
+      )}
     </div>
+    </>
   );
 }
