@@ -6,7 +6,7 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 const SITE_URL = "https://base44guide.com";
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GA_ID = "G-HT83FTC210";
 
 export const metadata: Metadata = {
   title: {
