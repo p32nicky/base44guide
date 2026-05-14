@@ -26,9 +26,7 @@ export const metadata: Metadata = {
     site: "@base44guide",
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  ...(process.env.NEXT_PUBLIC_GSC_ID
-    ? { verification: { google: process.env.NEXT_PUBLIC_GSC_ID } }
-    : {}),
+  verification: { google: "rExqKrlIUHf3C8lAuDKtsLeQVUqIIZ_IaHXKvClNwrQ" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
