@@ -1,4 +1,4 @@
-#!/usr/bin/env npx tsx
+﻿#!/usr/bin/env npx tsx
 /**
  * Generates 500 unique SEO articles about Base44 using Groq API.
  * Run: GROQ_API_KEY=xxx npx tsx scripts/generate-articles.ts
@@ -13,8 +13,8 @@ const AFFILIATE_LINK = "https://base44.pxf.io/c/2252709/2049275/25619?trafcat=ba
 
 const ARTICLE_TOPICS = [
   // Core reviews & comparisons
-  "Base44 Review 2025: Complete Guide for Non-Technical Founders",
-  "Base44 vs Bubble: Which No-Code Platform Wins in 2025?",
+  "Base44 Review Complete Guide for Non-Technical Founders",
+  "Base44 vs Bubble: Which No-Code Platform Wins",
   "Base44 vs Webflow: Which Is Better for Building Web Apps?",
   "Base44 vs Glide: AI App Builder Showdown",
   "Base44 vs Adalo: Best No-Code Mobile App Builder?",
@@ -28,7 +28,7 @@ const ARTICLE_TOPICS = [
   "Base44 vs PowerApps: Microsoft vs AI-Native",
   "Base44 vs AppSheet: Google vs Groq-Powered AI",
   "Base44 vs Wix Studio: Post-Acquisition Review",
-  "Base44 Pricing: Is It Worth the Cost in 2025?",
+  "Base44 Pricing: Is It Worth the Cost",
   "Base44 Free Plan: What You Get Without Paying",
   "Base44 Alternatives: 10 Platforms Compared",
   "Base44 Pros and Cons: Honest Review",
@@ -124,7 +124,7 @@ const ARTICLE_TOPICS = [
 
   // SEO & content marketing angles
   "What Is Vibe Coding? How Base44 Uses It",
-  "No-Code vs Low-Code vs Traditional Development in 2025",
+  "No-Code vs Low-Code vs Traditional Development",
   "Can AI Really Build Functional Web Apps? Base44 Tested",
   "How Base44 Is Disrupting the $250B Software Industry",
   "The Rise of AI-Native No-Code Platforms: Base44 Leads",
@@ -134,7 +134,7 @@ const ARTICLE_TOPICS = [
   "Is No-Code the Future of Software Development?",
   "How Non-Technical Founders Are Building Apps with Base44",
   "Base44 Success Stories: Real Apps Built by Non-Coders",
-  "The Best No-Code Tools for Entrepreneurs in 2025",
+  "The Best No-Code Tools for Entrepreneurs",
   "How to Hire a Developer vs Using Base44: Cost Comparison",
   "Base44 vs Hiring a Developer: What Makes More Sense?",
   "Building Internal Tools Without IT: The Base44 Way",
@@ -222,13 +222,13 @@ const ARTICLE_TOPICS = [
   "How Base44 Levels the Playing Field for Entrepreneurs",
   "Base44 for Side Projects: Build Your Idea on Weekends",
 
-  // 2025 trends
-  "AI No-Code Platforms in 2025: Where Base44 Fits",
+  // trends
+  "AI No-Code Platforms: Where Base44 Fits",
   "The Future of App Development: AI-Powered No-Code",
   "Generative AI in Software Development: Base44 Case Study",
   "How GPT and LLMs Power Base44's App Building",
-  "No-Code Trends in 2025: What's Driving Adoption",
-  "The No-Code Market in 2025: Growth and Opportunities",
+  "No-Code Trends: What's Driving Adoption",
+  "The No-Code Market: Growth and Opportunities",
   "How AI Is Making App Development Accessible to Everyone",
   "No-Code for Enterprises: Is Base44 Enterprise-Ready?",
   "Building AI-Powered Apps with Base44",
@@ -237,7 +237,7 @@ const ARTICLE_TOPICS = [
   "No-Code Development Teams: How Companies Are Adapting",
   "The Democratization of Software with Base44",
   "How Base44 Empowers the Citizen Developer",
-  "2025 No-Code Predictions: Will AI Replace Developers?",
+  "No-Code Predictions: Will AI Replace Developers?",
 
   // Niche audiences
   "Base44 for Stay-at-Home Parents: Build and Earn",
@@ -279,7 +279,7 @@ const ARTICLE_TOPICS = [
   "Your Competitor Has a Custom App. Do You?",
 
   // Comparison with methods
-  "No-Code vs Hiring a Developer in 2025",
+  "No-Code vs Hiring a Developer",
   "Base44 vs Outsourcing Development: What's Better?",
   "DIY App Development: No-Code vs Learning to Code",
   "Is Base44 Better Than Hiring a Freelancer?",
@@ -315,13 +315,13 @@ const ARTICLE_TOPICS = [
   "Is Base44 Worth It for Small Businesses?",
 
   // Trending searches
-  "How to Build a No-Code App in 2025",
-  "Best AI App Builders in 2025",
+  "How to Build a No-Code App",
+  "Best AI App Builders",
   "Top No-Code Platforms for Entrepreneurs",
   "Best Tools to Build Apps Without Coding",
   "How to Start a Software Business Without Coding",
-  "Fastest Way to Build a Web App in 2025",
-  "Free App Builders That Actually Work in 2025",
+  "Fastest Way to Build a Web App",
+  "Free App Builders That Actually Work",
   "How to Build a Business App on a Budget",
   "No-Code Platforms That Use AI to Build Apps",
   "Build an App for Your Small Business: Complete Guide",
@@ -429,8 +429,8 @@ REQUIREMENTS:
 - Include 5 focus keywords in this exact format on a new line: KEYWORDS: keyword1, keyword2, keyword3, keyword4, keyword5
 - Write in HTML with proper h1, h2, h3, p, ul, li tags
 - The article should genuinely help readers understand Base44's value
-- Reference the affiliate link naturally as "Start Building with Base44" or "Try Base44 Free" — use [CTA] as placeholder
-- Do NOT include actual URLs — just use [CTA] where a link should go
+- Reference the affiliate link naturally as "Start Building with Base44" or "Try Base44 Free" â€” use [CTA] as placeholder
+- Do NOT include actual URLs â€” just use [CTA] where a link should go
 - Make each section substantive, not generic filler
 
 Article title: ${topic}`;
@@ -461,7 +461,7 @@ Article title: ${topic}`;
     const body = content
       .replace(/META:\s*.+\n?/, "")
       .replace(/KEYWORDS:\s*.+\n?/, "")
-      .replace(/\[CTA\]/g, `<a href="${AFFILIATE_LINK}" class="cta-link">Start Building with Base44 →</a>`);
+      .replace(/\[CTA\]/g, `<a href="${AFFILIATE_LINK}" class="cta-link">Start Building with Base44 â†’</a>`);
 
     const article = {
       slug,
@@ -476,7 +476,7 @@ Article title: ${topic}`;
     console.log(`[${index + 1}/500] DONE: ${topic}`);
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : String(err);
-    console.error(`[${index + 1}/500] ERROR: ${topic} — ${msg}`);
+    console.error(`[${index + 1}/500] ERROR: ${topic} â€” ${msg}`);
     // Write error placeholder so we can retry
     const article = {
       slug,
@@ -490,7 +490,7 @@ Article title: ${topic}`;
     fs.writeFileSync(outPath, JSON.stringify(article, null, 2));
   }
 
-  // Rate limit: Groq free tier = 12,000 TPM. Each article ~2000 tokens → max 6/min.
+  // Rate limit: Groq free tier = 12,000 TPM. Each article ~2000 tokens â†’ max 6/min.
   // 13s delay = ~4.6/min, safely under limit.
   await new Promise((r) => setTimeout(r, 13000));
 }

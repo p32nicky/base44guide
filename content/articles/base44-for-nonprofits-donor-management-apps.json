@@ -1,0 +1,13 @@
+{
+  "slug": "base44-for-nonprofits-donor-management-apps",
+  "title": "Base44 for Nonprofits: Donor Management Apps",
+  "metaDescription": "Learn about Base44 for Nonprofits: Donor Management Apps and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Base44 for Nonprofits: Donor Management Apps</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-14T12:32:53.387Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98959, Requested 2304. Please try again in 18m11.232s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
