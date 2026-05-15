@@ -1,0 +1,13 @@
+{
+  "slug": "no-code-vs-hiring-a-developer",
+  "title": "No-Code vs Hiring a Developer",
+  "metaDescription": "Learn about No-Code vs Hiring a Developer and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>No-Code vs Hiring a Developer</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T10:38:09.646Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99401, Requested 2302. Please try again in 24m31.392s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

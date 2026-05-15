@@ -1,0 +1,13 @@
+{
+  "slug": "monetizing-your-base44-app-revenue-models-that-work",
+  "title": "Monetizing Your Base44 App: Revenue Models That Work",
+  "metaDescription": "Learn about Monetizing Your Base44 App: Revenue Models That Work and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Monetizing Your Base44 App: Revenue Models That Work</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T10:49:42.888Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98599, Requested 2312. Please try again in 13m7.104s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

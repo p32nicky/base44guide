@@ -1,0 +1,13 @@
+{
+  "slug": "build-an-app-for-your-small-business-complete-guide",
+  "title": "Build an App for Your Small Business: Complete Guide",
+  "metaDescription": "Learn about Build an App for Your Small Business: Complete Guide and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Build an App for Your Small Business: Complete Guide</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T10:46:50.299Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98798, Requested 2308. Please try again in 15m55.584s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

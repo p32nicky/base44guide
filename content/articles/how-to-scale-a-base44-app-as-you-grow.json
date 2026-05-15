@@ -1,0 +1,13 @@
+{
+  "slug": "how-to-scale-a-base44-app-as-you-grow",
+  "title": "How to Scale a Base44 App as You Grow",
+  "metaDescription": "Learn about How to Scale a Base44 App as You Grow and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How to Scale a Base44 App as You Grow</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T10:55:54.094Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98169, Requested 2308. Please try again in 6m52.128s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

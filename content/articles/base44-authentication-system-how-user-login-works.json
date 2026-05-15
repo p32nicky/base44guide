@@ -1,0 +1,13 @@
+{
+  "slug": "base44-authentication-system-how-user-login-works",
+  "title": "Base44 Authentication System: How User Login Works",
+  "metaDescription": "Learn about Base44 Authentication System: How User Login Works and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Base44 Authentication System: How User Login Works</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T10:07:57.187Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99182, Requested 1496. Please try again in 9m45.791999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

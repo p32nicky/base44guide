@@ -1,0 +1,13 @@
+{
+  "slug": "should-you-use-base44-after-the-wix-acquisition",
+  "title": "Should You Use Base44 After the Wix Acquisition?",
+  "metaDescription": "Learn about Should You Use Base44 After the Wix Acquisition? and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Should You Use Base44 After the Wix Acquisition?</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T10:52:48.644Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98384, Requested 2309. Please try again in 9m58.752s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

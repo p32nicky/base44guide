@@ -1,0 +1,13 @@
+{
+  "slug": "the-rise-of-ai-native-no-code-platforms-base44-leads",
+  "title": "The Rise of AI-Native No-Code Platforms: Base44 Leads",
+  "metaDescription": "Learn about The Rise of AI-Native No-Code Platforms: Base44 Leads and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>The Rise of AI-Native No-Code Platforms: Base44 Leads</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T10:10:22.821Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99013, Requested 1427. Please try again in 6m20.16s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
