@@ -1,0 +1,13 @@
+{
+  "slug": "base44-for-freelance-writers-project-and-invoice-apps",
+  "title": "Base44 for Freelance Writers: Project and Invoice Apps",
+  "metaDescription": "Learn about Base44 for Freelance Writers: Project and Invoice Apps and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Base44 for Freelance Writers: Project and Invoice Apps</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T01:54:22.649Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98872, Requested 1433. Please try again in 4m23.52s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

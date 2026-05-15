@@ -1,0 +1,13 @@
+{
+  "slug": "how-to-start-a-software-business-without-coding",
+  "title": "How to Start a Software Business Without Coding",
+  "metaDescription": "Learn about How to Start a Software Business Without Coding and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How to Start a Software Business Without Coding</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T02:07:48.969Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 97938, Requested 2304. Please try again in 3m29.088s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

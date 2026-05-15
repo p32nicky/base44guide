@@ -1,0 +1,13 @@
+{
+  "slug": "no-code-development-teams-how-companies-are-adapting",
+  "title": "No-Code Development Teams: How Companies Are Adapting",
+  "metaDescription": "Learn about No-Code Development Teams: How Companies Are Adapting and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>No-Code Development Teams: How Companies Are Adapting</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T01:51:43.676Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99055, Requested 2312. Please try again in 19m41.088s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "how-ai-is-making-app-development-accessible-to-everyone",
+  "title": "How AI Is Making App Development Accessible to Everyone",
+  "metaDescription": "Learn about How AI Is Making App Development Accessible to Everyone and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How AI Is Making App Development Accessible to Everyone</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T01:50:37.798Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99132, Requested 1406. Please try again in 7m44.832s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

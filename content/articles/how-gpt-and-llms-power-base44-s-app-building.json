@@ -1,0 +1,13 @@
+{
+  "slug": "how-gpt-and-llms-power-base44-s-app-building",
+  "title": "How GPT and LLMs Power Base44's App Building",
+  "metaDescription": "Learn about How GPT and LLMs Power Base44's App Building and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How GPT and LLMs Power Base44's App Building</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-15T01:49:58.358Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99177, Requested 1481. Please try again in 9m28.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
