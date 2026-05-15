@@ -1,5 +1,4 @@
-﻿#!/usr/bin/env npx tsx
-/**
+﻿/**
  * Generates 500 unique SEO articles about Base44 using Groq API.
  * Run: GROQ_API_KEY=xxx npx tsx scripts/generate-articles.ts
  * Output: content/articles/*.json
@@ -12,6 +11,22 @@ import path from "path";
 const AFFILIATE_LINK = "https://base44.pxf.io/c/2252709/2049275/25619?trafcat=base";
 
 const ARTICLE_TOPICS = [
+  // High-value keyword research targets (low competition)
+  "Base44 Reddit: What Users Are Really Saying",
+  "Base44 Review Reddit: Honest Community Opinions",
+  "Base44 Student Discount: How to Get It",
+  "Base44 Website Builder: Full Breakdown",
+  "Base44 vs Claude: Which AI Tool Should You Use?",
+  "How Does Base44 Work? Plain English Explanation",
+  "Base44 Examples: Real Apps Built on the Platform",
+  "Base44 Mobile App: Build Apps That Work on Phone",
+  "Is Base44 Good? Unbiased Verdict",
+  "Base44 AI Review: What the AI Actually Does",
+  "Is Base44 Worth It? Honest Cost vs Value Analysis",
+  "Base44 Reviews: What Customers Are Saying",
+  "Base44 Builder Plan: Which Plan Is Right for You?",
+  "Is Base44 Down? How to Check Status and Fixes",
+
   // Core reviews & comparisons
   "Base44 Review Complete Guide for Non-Technical Founders",
   "Base44 vs Bubble: Which No-Code Platform Wins",
