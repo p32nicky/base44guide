@@ -61,6 +61,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </a>
           </div>
         </header>
+        <div className="bg-amber-50 border-b border-amber-200 text-center text-xs text-amber-800 py-2 px-4">
+          <strong>Affiliate Disclosure:</strong> Base44 Guide is reader-supported. We may earn a commission when you purchase through our links, at no extra cost to you.
+        </div>
         <main>{children}</main>
         <footer className="border-t border-gray-100 mt-16 py-8 text-center text-sm text-gray-500">
           <p>
