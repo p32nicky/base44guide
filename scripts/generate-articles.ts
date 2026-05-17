@@ -487,7 +487,8 @@ Article title: ${topic}`;
         // @ts-ignore
         temperature: 0.8,
       });
-      content = (completion.choices[0]?.message?.content as string) ?? "";
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      content = ((completion as any).choices?.[0]?.message?.content as string) ?? "";
       if (!useGroq) console.log(`[${index + 1}/500] Using Cerebras: ${topic}`);
     }
 
