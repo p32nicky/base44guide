@@ -18,11 +18,20 @@ export interface Article {
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
 function processBody(raw: string): string {
-  let body = raw.replace(/\[CTA[^\]]*\]/gi, CTA_HTML);
-  if (body.includes("## ") || body.includes("### ") || body.startsWith("# ")) {
-    body = marked.parse(body) as string;
-    body = body.replace(/\[CTA[^\]]*\]/gi, CTA_HTML);
-  }
+  let body = raw
+    .replace(/^META:.*$/gm, "")
+    .replace(/^KEYWORDS:.*$/gm, "")
+    .trim();
+
+  // Always parse as markdown
+  body = marked.parse(body) as string;
+
+  // Replace all CTA variants
+  body = body.replace(/\[CTA[^\]]*\]/gi, CTA_HTML);
+  body = body.replace(/<strong>Start Building with Base44[^<]*<\/strong>/gi, CTA_HTML);
+  body = body.replace(/<strong>Try Base44[^<]*<\/strong>/gi, CTA_HTML);
+  body = body.replace(/<p><strong>Start Building[^<]*<\/strong><\/p>/gi, `<p>${CTA_HTML}</p>`);
+
   return body;
 }
 
