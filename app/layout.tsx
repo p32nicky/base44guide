@@ -67,10 +67,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <footer className="border-t border-gray-100 mt-16 py-8 text-center text-sm text-gray-500">
           <p>
-            Base44 Guide is an independent review site. We may earn a commission when you use our links.{" "}
-            <a href="/" className="underline hover:text-gray-700">
-              All Articles
-            </a>
+            Base44 Guide is an independent review site. We may earn a commission when you use our links.
+          </p>
+          <p className="mt-2 flex items-center justify-center gap-4">
+            <a href="/" className="underline hover:text-gray-700">All Articles</a>
+            <a href="/affiliate-disclosure" className="underline hover:text-gray-700">Affiliate Disclosure</a>
+            <a href="/privacy-policy" className="underline hover:text-gray-700">Privacy Policy</a>
           </p>
         </footer>
       </body>

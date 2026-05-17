@@ -96,6 +96,12 @@ export default async function ArticlePage({ params }: Props) {
           </ol>
         </nav>
 
+        {/* Per-article affiliate disclosure (FTC required) */}
+        <p className="text-xs text-gray-500 bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 mb-6">
+          <strong>Affiliate Disclosure:</strong> This article contains affiliate links. We may earn a commission if you purchase through our links, at no extra cost to you.{" "}
+          <a href="/affiliate-disclosure" className="underline hover:text-gray-700">Learn more</a>.
+        </p>
+
         {/* Top CTA banner */}
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 mb-8 flex items-center justify-between gap-4 flex-wrap">
           <p className="text-sm text-gray-700 font-medium">
