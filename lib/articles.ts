@@ -19,8 +19,12 @@ const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
 function processBody(raw: string): string {
   let body = raw
-    .replace(/^META:.*$/gm, "")
-    .replace(/^KEYWORDS:.*$/gm, "")
+    .replace(/^\*?\*?Meta Description:?\*?\*?.*$/gim, "")
+    .replace(/^\*?\*?Keywords?:?\*?\*?.*$/gim, "")
+    .replace(/^META:.*$/gim, "")
+    .replace(/^KEYWORDS?:.*$/gim, "")
+    .replace(/^\*?\*?SEO Meta Description:?\*?\*?.*$/gim, "")
+    .replace(/^\*?\*?Focus Keywords?:?\*?\*?.*$/gim, "")
     .trim();
 
   // Always parse as markdown
