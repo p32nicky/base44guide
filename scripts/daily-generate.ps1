@@ -26,9 +26,10 @@ $envFile = "C:\base44site\.env.local"
 if (Test-Path $envFile) {
     Get-Content $envFile | ForEach-Object {
         if ($_ -match "^GROQ_API_KEY=(.+)") { $env:GROQ_API_KEY = $matches[1] }
+        if ($_ -match "^CEREBRAS_API_KEY=(.+)") { $env:CEREBRAS_API_KEY = $matches[1] }
     }
 }
-if (-not $env:GROQ_API_KEY) { Log "ERROR: GROQ_API_KEY not set"; exit 1 }
+if (-not $env:GROQ_API_KEY -and -not $env:CEREBRAS_API_KEY) { Log "ERROR: No API keys set"; exit 1 }
 
 # Delete any existing error files so they get retried
 Get-ChildItem C:\base44site\content\articles -Filter "*.json" | ForEach-Object {

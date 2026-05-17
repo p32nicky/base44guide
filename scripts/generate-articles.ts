@@ -1,12 +1,16 @@
 ﻿/**
- * Generates 500 unique SEO articles about Base44 using Groq API.
- * Run: GROQ_API_KEY=xxx npx tsx scripts/generate-articles.ts
+ * Generates 500 unique SEO articles about Base44.
+ * Uses Groq first, falls back to Cerebras when Groq hits daily limit.
+ * Run: GROQ_API_KEY=xxx CEREBRAS_API_KEY=xxx npx tsx scripts/generate-articles.ts
  * Output: content/articles/*.json
  */
 
 import Groq from "groq-sdk";
+import Cerebras from "@cerebras/cerebras_cloud_sdk";
 import fs from "fs";
 import path from "path";
+
+let useGroq = true; // flips to false when Groq quota exhausted
 
 const AFFILIATE_LINK = "https://base44.pxf.io/c/2252709/2049275/25619?trafcat=base";
 
@@ -421,6 +425,7 @@ function slugify(text: string): string {
 
 async function generateArticle(
   groq: Groq,
+  cerebras: Cerebras,
   topic: string,
   index: number
 ): Promise<void> {
@@ -444,21 +449,47 @@ REQUIREMENTS:
 - Include 5 focus keywords in this exact format on a new line: KEYWORDS: keyword1, keyword2, keyword3, keyword4, keyword5
 - Write in HTML with proper h1, h2, h3, p, ul, li tags
 - The article should genuinely help readers understand Base44's value
-- Reference the affiliate link naturally as "Start Building with Base44" or "Try Base44 Free" â€” use [CTA] as placeholder
-- Do NOT include actual URLs â€” just use [CTA] where a link should go
+- Reference the affiliate link naturally as "Start Building with Base44" or "Try Base44 Free" -- use [CTA] as placeholder
+- Do NOT include actual URLs -- just use [CTA] where a link should go
 - Make each section substantive, not generic filler
 
 Article title: ${topic}`;
 
   try {
-    const completion = await groq.chat.completions.create({
-      model: "llama-3.3-70b-versatile",
-      messages: [{ role: "user", content: prompt }],
-      max_tokens: 2000,
-      temperature: 0.8,
-    });
+    let content = "";
 
-    const content = completion.choices[0]?.message?.content ?? "";
+    if (useGroq) {
+      try {
+        const completion = await groq.chat.completions.create({
+          model: "llama-3.3-70b-versatile",
+          messages: [{ role: "user", content: prompt }],
+          max_tokens: 2000,
+          temperature: 0.8,
+        });
+        content = completion.choices[0]?.message?.content ?? "";
+      } catch (groqErr: unknown) {
+        const msg = String(groqErr);
+        if (msg.includes("429") || msg.includes("rate_limit") || msg.includes("tokens per day")) {
+          console.log(`Groq quota hit -- switching to Cerebras for remaining articles`);
+          useGroq = false;
+        } else {
+          throw groqErr;
+        }
+      }
+    }
+
+    // Use Cerebras if Groq quota hit or unavailable
+    if (!useGroq || !content) {
+      const completion = await cerebras.chat.completions.create({
+        model: "llama3.1-8b",
+        messages: [{ role: "user", content: prompt }],
+        max_tokens: 2000,
+        // @ts-ignore
+        temperature: 0.8,
+      });
+      content = (completion.choices[0]?.message?.content as string) ?? "";
+      if (!useGroq) console.log(`[${index + 1}/500] Using Cerebras: ${topic}`);
+    }
 
     // Extract meta description
     const metaMatch = content.match(/META:\s*(.+)/);
@@ -476,7 +507,7 @@ Article title: ${topic}`;
     const body = content
       .replace(/META:\s*.+\n?/, "")
       .replace(/KEYWORDS:\s*.+\n?/, "")
-      .replace(/\[CTA\]/g, `<a href="${AFFILIATE_LINK}" class="cta-link">Start Building with Base44 â†’</a>`);
+      .replace(/\[CTA\]/g, `<a href="${AFFILIATE_LINK}" class="cta-link">Start Building with Base44 →</a>`);
 
     const article = {
       slug,
@@ -491,7 +522,7 @@ Article title: ${topic}`;
     console.log(`[${index + 1}/500] DONE: ${topic}`);
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : String(err);
-    console.error(`[${index + 1}/500] ERROR: ${topic} â€” ${msg}`);
+    console.error(`[${index + 1}/500] ERROR: ${topic} â€" ${msg}`);
     // Write error placeholder so we can retry
     const article = {
       slug,
@@ -505,27 +536,48 @@ Article title: ${topic}`;
     fs.writeFileSync(outPath, JSON.stringify(article, null, 2));
   }
 
-  // Rate limit: Groq free tier = 12,000 TPM. Each article ~2000 tokens â†’ max 6/min.
-  // 13s delay = ~4.6/min, safely under limit.
-  await new Promise((r) => setTimeout(r, 13000));
+  // Groq: 13s = ~4.6/min (under 12k TPM limit)
+  // Cerebras: 25s = ~2.4/min (under RPM limit)
+  await new Promise((r) => setTimeout(r, useGroq ? 13000 : 25000));
 }
 
 async function main() {
-  const apiKey = process.env.GROQ_API_KEY;
-  if (!apiKey) {
-    console.error("ERROR: GROQ_API_KEY env var not set");
+  const groqKey = process.env.GROQ_API_KEY;
+  const cerebrasKey = process.env.CEREBRAS_API_KEY;
+
+  if (!groqKey && !cerebrasKey) {
+    console.error("ERROR: Set GROQ_API_KEY and/or CEREBRAS_API_KEY");
     process.exit(1);
   }
 
-  const groq = new Groq({ apiKey });
+  if (!groqKey) {
+    useGroq = false;
+    console.log("No Groq key -- using Cerebras only");
+  }
+  if (!cerebrasKey) {
+    console.log("No Cerebras key -- using Groq only (no fallback)");
+  }
+
+  const groq = new Groq({ apiKey: groqKey ?? "none" });
+  const cerebras = new Cerebras({ apiKey: cerebrasKey ?? "none" });
 
   fs.mkdirSync(path.join("content", "articles"), { recursive: true });
 
-  console.log(`Generating ${ARTICLE_TOPICS.length} articles sequentially (13s gap for rate limit)...`);
+  // Combine hardcoded topics + topics.json (if exists)
+  let allTopics = [...ARTICLE_TOPICS];
+  const topicsJsonPath = path.join("scripts", "topics.json");
+  if (fs.existsSync(topicsJsonPath)) {
+    const extra: string[] = JSON.parse(fs.readFileSync(topicsJsonPath, "utf-8"));
+    const existing = new Set(ARTICLE_TOPICS);
+    for (const t of extra) {
+      if (!existing.has(t)) { allTopics.push(t); existing.add(t); }
+    }
+  }
 
-  // Sequential to stay within 12k TPM free tier limit
-  for (let i = 0; i < ARTICLE_TOPICS.length; i++) {
-    await generateArticle(groq, ARTICLE_TOPICS[i], i);
+  console.log(`Generating ${allTopics.length} articles (Groq → Cerebras fallback)...`);
+
+  for (let i = 0; i < allTopics.length; i++) {
+    await generateArticle(groq, cerebras, allTopics[i], i);
   }
 
   console.log("Done! All articles generated.");
