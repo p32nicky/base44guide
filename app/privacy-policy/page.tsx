@@ -1,23 +1,16 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "Privacy policy for Base44 Guide.",
-};
-
-export default function PrivacyPolicy() {
+﻿export default function PrivacyPolicy() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12 prose prose-gray">
-      <h1>Privacy Policy</h1>
-      <p>Last updated: May 2026</p>
-      <h2>Information We Collect</h2>
-      <p>We use Google Analytics to collect anonymous usage data. No personally identifiable information is collected unless you contact us directly.</p>
-      <h2>Cookies</h2>
-      <p>Google Analytics uses cookies to track site usage. You can disable cookies in your browser settings.</p>
-      <h2>Third-Party Links</h2>
-      <p>This site contains affiliate links. We are not responsible for third-party privacy practices.</p>
-      <h2>Contact</h2>
-      <p>Email <a href="mailto:nickdavies100@gmail.com">nickdavies100@gmail.com</a>.</p>
+    <div className="max-w-3xl mx-auto px-4 py-16">
+      <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
+      <p className="text-gray-500 mb-6">Last updated: May 2026</p>
+      <h2 className="text-xl font-bold mb-3">Information We Collect</h2>
+      <p className="mb-4">We do not collect personal information. We use Google Analytics to gather anonymous usage data (page views, session duration, general location) that cannot identify individual users.</p>
+      <h2 className="text-xl font-bold mb-3">Cookies</h2>
+      <p className="mb-4">Google Analytics cookies help us understand site usage. You may opt out via the Google Analytics Opt-out Browser Add-on.</p>
+      <h2 className="text-xl font-bold mb-3">Third-Party Links</h2>
+      <p className="mb-4">This site contains affiliate links to third-party sites. We are not responsible for their privacy practices.</p>
+      <h2 className="text-xl font-bold mb-3">Contact</h2>
+      <p className="mb-4">Questions? Contact us through the information provided on this site.</p>
     </div>
   );
 }

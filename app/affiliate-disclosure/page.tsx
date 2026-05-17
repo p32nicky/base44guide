@@ -1,21 +1,11 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Affiliate Disclosure",
-  description: "Affiliate disclosure for Base44 Guide.",
-};
-
-export default function AffiliateDisclosure() {
+﻿export default function AffiliateDisclosure() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12 prose prose-gray">
-      <h1>Affiliate Disclosure</h1>
-      <p>Base44 Guide participates in affiliate advertising programs. When you click links and sign up or purchase, we may earn a commission at <strong>no extra cost to you</strong>.</p>
-      <h2>How It Works</h2>
-      <p>Affiliate links pay us a small referral fee when you complete a signup or purchase. This keeps the site free and funds our content.</p>
-      <h2>Our Promise</h2>
-      <p>Affiliate relationships never influence our reviews. We only recommend tools we believe provide genuine value.</p>
-      <h2>Contact</h2>
-      <p>Questions? Email <a href="mailto:nickdavies100@gmail.com">nickdavies100@gmail.com</a>.</p>
+    <div className="max-w-3xl mx-auto px-4 py-16">
+      <h1 className="text-3xl font-bold mb-6">Affiliate Disclosure</h1>
+      <p className="text-gray-500 mb-6">Last updated: May 2026</p>
+      <p className="mb-4">This site is reader-supported. Some links are affiliate links — we may earn a commission if you click and purchase, at no extra cost to you.</p>
+      <p className="mb-4">We only recommend products we genuinely believe provide value. Our opinions are not influenced by affiliate relationships.</p>
+      <p className="mb-4">This disclosure complies with the FTC guidelines on endorsements (16 CFR Part 255).</p>
     </div>
   );
 }
