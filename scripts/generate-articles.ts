@@ -581,10 +581,16 @@ async function main() {
     }
   }
 
-  console.log(`Generating ${allTopics.length} articles (Groq → Cerebras fallback)...`);
+  const MAX_PER_RUN = 500;
+  let generated = 0;
+
+  console.log(`Generating up to ${MAX_PER_RUN} new articles per run...`);
 
   for (let i = 0; i < allTopics.length; i++) {
+    if (generated >= MAX_PER_RUN) { console.log(`Daily limit of ${MAX_PER_RUN} reached.`); break; }
+    const before = fs.existsSync(path.join("content", "articles", `${allTopics[i].toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}.json`));
     await generateArticle(groq, cerebras, allTopics[i], i);
+    if (!before) generated++;
   }
 
   console.log("Done! All articles generated.");
