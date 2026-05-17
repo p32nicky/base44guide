@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>Build a Makeup Artists Management App with Base44</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T15:09:35.142Z",
-  "error": "404 Model llama3.1-70b does not exist or you do not have access to it."
+  "generatedAt": "2026-05-17T19:14:34.780Z",
+  "error": "429 Requests per hour limit exceeded - too many requests sent."
 }

@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>Using Base44 to Replace Your Development Agency</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T14:53:00.385Z",
-  "error": "429 Requests per minute limit exceeded - too many requests sent."
+  "generatedAt": "2026-05-17T15:35:01.785Z",
+  "error": "429 Requests per hour limit exceeded - too many requests sent."
 }

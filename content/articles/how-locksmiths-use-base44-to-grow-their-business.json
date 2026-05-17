@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How Locksmiths Use Base44 to Grow Their Business</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T15:08:15.403Z",
-  "error": "404 Model llama3.1-70b does not exist or you do not have access to it."
+  "generatedAt": "2026-05-17T19:13:48.245Z",
+  "error": "429 Requests per hour limit exceeded - too many requests sent."
 }

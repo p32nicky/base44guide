@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>The Best Base44 Apps for Hair Stylists</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T14:53:15.284Z",
-  "error": "404 Model llama3.1-70b does not exist or you do not have access to it."
+  "generatedAt": "2026-05-17T19:04:08.610Z",
+  "error": "429 Requests per hour limit exceeded - too many requests sent."
 }

@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>From Zero to App: The Ultimate Base44 Tutorial</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T15:13:38.890Z",
-  "error": "429 Requests per hour limit exceeded - too many requests sent."
+  "generatedAt": "2026-05-17T18:06:47.746Z",
+  "error": "429 Requests per minute limit exceeded - too many requests sent."
 }

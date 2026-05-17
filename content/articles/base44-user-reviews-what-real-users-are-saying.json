@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>Base44 User Reviews: What Real Users Are Saying</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T15:16:43.404Z",
-  "error": "429 Requests per hour limit exceeded - too many requests sent."
+  "generatedAt": "2026-05-17T18:18:04.401Z",
+  "error": "429 Requests per minute limit exceeded - too many requests sent."
 }

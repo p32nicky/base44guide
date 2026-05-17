@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How to Turn Your Expertise into a Custom App with Base44</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T15:16:14.654Z",
-  "error": "429 Requests per hour limit exceeded - too many requests sent."
+  "generatedAt": "2026-05-17T18:15:02.840Z",
+  "error": "429 Requests per minute limit exceeded - too many requests sent."
 }

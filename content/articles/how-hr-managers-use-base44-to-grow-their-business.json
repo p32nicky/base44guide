@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How HR Managers Use Base44 to Grow Their Business</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T14:56:07.573Z",
-  "error": "404 Model llama3.1-70b does not exist or you do not have access to it."
+  "generatedAt": "2026-05-17T19:05:37.724Z",
+  "error": "429 Requests per hour limit exceeded - too many requests sent."
 }

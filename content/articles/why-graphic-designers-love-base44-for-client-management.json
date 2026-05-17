@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>Why Graphic Designers Love Base44 for Client Management</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T14:52:22.177Z",
-  "error": "404 Model llama3.1-70b does not exist or you do not have access to it."
+  "generatedAt": "2026-05-17T19:03:24.368Z",
+  "error": "429 Requests per hour limit exceeded - too many requests sent."
 }

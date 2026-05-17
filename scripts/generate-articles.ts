@@ -7,8 +7,14 @@
 
 import Groq from "groq-sdk";
 import Cerebras from "@cerebras/cerebras_cloud_sdk";
+import { marked } from "marked";
 import fs from "fs";
 import path from "path";
+
+function mdToHtml(text: string): string {
+  if (text.includes("<h1") || text.includes("<p>")) return text; // already HTML
+  return marked.parse(text) as string;
+}
 
 let useGroq = true; // flips to false when Groq quota exhausted
 
@@ -504,10 +510,11 @@ Article title: ${topic}`;
       ? kwMatch[1].split(",").map((k) => k.trim())
       : ["Base44", "no-code", "app builder", "AI app builder", "no-code platform"];
 
-    // Strip META and KEYWORDS lines from body
-    const body = content
+    // Strip META and KEYWORDS lines, convert markdown to HTML, inject CTAs
+    const rawBody = content
       .replace(/META:\s*.+\n?/, "")
-      .replace(/KEYWORDS:\s*.+\n?/, "")
+      .replace(/KEYWORDS:\s*.+\n?/, "");
+    const body = mdToHtml(rawBody)
       .replace(/\[CTA\]/g, `<a href="${AFFILIATE_LINK}" class="cta-link">Start Building with Base44 →</a>`);
 
     const article = {
@@ -537,9 +544,8 @@ Article title: ${topic}`;
     fs.writeFileSync(outPath, JSON.stringify(article, null, 2));
   }
 
-  // Groq: 13s = ~4.6/min (under 12k TPM limit)
-  // Cerebras: 25s = ~2.4/min (under RPM limit)
-  await new Promise((r) => setTimeout(r, useGroq ? 13000 : 25000));
+  // Groq: 13s = ~4.6/min | Cerebras free: 60s = 1/min
+  await new Promise((r) => setTimeout(r, useGroq ? 13000 : 60000));
 }
 
 async function main() {
