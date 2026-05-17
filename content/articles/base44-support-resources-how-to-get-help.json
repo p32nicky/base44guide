@@ -1,0 +1,13 @@
+{
+  "slug": "base44-support-resources-how-to-get-help",
+  "title": "Base44 Support Resources: How to Get Help",
+  "metaDescription": "Learn about Base44 Support Resources: How to Get Help and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Base44 Support Resources: How to Get Help</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-05-17T13:40:17.243Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98859, Requested 2306. Please try again in 16m46.56s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
