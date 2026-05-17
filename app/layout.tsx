@@ -5,7 +5,7 @@ import "./globals.css";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
-const SITE_URL = "https://base44site.vercel.app";
+const SITE_URL = "https://base44guide.io";
 const GA_ID = "G-HT83FTC210";
 
 export const metadata: Metadata = {
