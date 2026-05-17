@@ -27,6 +27,9 @@ function processBody(raw: string): string {
     .replace(/^\*?\*?Focus Keywords?:?\*?\*?.*$/gim, "")
     .trim();
 
+  // Strip closing CTA tags
+  body = body.replace(/\[\/CTA\]/gi, "").replace(/\[CTA\/\]/gi, "");
+
   // Always parse as markdown
   body = marked.parse(body) as string;
 
