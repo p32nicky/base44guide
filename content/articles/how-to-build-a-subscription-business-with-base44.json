@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How to Build a Subscription Business with Base44</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T19:11:27.073Z",
-  "error": "429 Requests per hour limit exceeded - too many requests sent."
+  "generatedAt": "2026-05-17T23:48:38.147Z",
+  "error": "429 Tokens per day limit exceeded - too many tokens processed."
 }

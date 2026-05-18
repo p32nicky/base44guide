@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How Contractors Use Base44 to Grow Their Business</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T18:10:00.634Z",
-  "error": "429 Requests per minute limit exceeded - too many requests sent."
+  "generatedAt": "2026-05-18T00:50:07.019Z",
+  "error": "429 Tokens per day limit exceeded - too many tokens processed."
 }

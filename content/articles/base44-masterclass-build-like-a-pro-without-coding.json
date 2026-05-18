@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>Base44 Masterclass: Build Like a Pro Without Coding</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T18:09:33.533Z",
-  "error": "429 Requests per minute limit exceeded - too many requests sent."
+  "generatedAt": "2026-05-17T23:33:10.616Z",
+  "error": "429 Tokens per day limit exceeded - too many tokens processed."
 }

@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How to Build a No-Code App</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-05-17T18:37:45.858Z",
-  "error": "429 Requests per minute limit exceeded - too many requests sent."
+  "generatedAt": "2026-05-17T23:38:19.614Z",
+  "error": "429 Tokens per day limit exceeded - too many tokens processed."
 }
