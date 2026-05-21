@@ -1,6 +1,6 @@
-import { getAllArticles } from "@/lib/articles";
+import { getArticleSummaries } from "@/lib/articles";
 import type { Metadata } from "next";
-import Link from "next/link";
+import ArticleList from "@/app/components/ArticleList";
 
 export const metadata: Metadata = {
   title: "Base44 Reviews & Guides — Build Apps Without Code",
@@ -33,7 +33,7 @@ const orgJsonLd = {
 };
 
 export default function HomePage() {
-  const articles = getAllArticles();
+  const articles = getArticleSummaries();
 
   return (
     <>
@@ -85,36 +85,8 @@ export default function HomePage() {
         </a>
       </div>
 
-      {/* Article grid */}
-      <h2 className="text-2xl font-bold mb-6">
-        {articles.length > 0
-          ? `${articles.length} Base44 Articles & Guides`
-          : "Articles Loading..."}
-      </h2>
-
-      {articles.length === 0 ? (
-        <div className="text-center py-16 text-gray-500">
-          <p className="text-lg mb-2">Articles are being generated.</p>
-          <p>Run the generation script and deploy again to populate this page.</p>
-        </div>
-      ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {articles.map((article) => (
-            <Link
-              key={article.slug}
-              href={`/articles/${article.slug}`}
-              className="block p-5 border border-gray-200 rounded-xl hover:border-orange-300 hover:shadow-sm transition-all group"
-            >
-              <h3 className="font-semibold text-gray-900 group-hover:text-orange-600 leading-snug mb-2">
-                {article.title}
-              </h3>
-              <p className="text-sm text-gray-500 line-clamp-2">
-                {article.metaDescription}
-              </p>
-            </Link>
-          ))}
-        </div>
-      )}
+      {/* Article list with search + categories */}
+      <ArticleList articles={articles} />
     </div>
     </>
   );

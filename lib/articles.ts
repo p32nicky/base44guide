@@ -42,6 +42,28 @@ function processBody(raw: string): string {
   return body;
 }
 
+export interface ArticleSummary {
+  slug: string;
+  title: string;
+  metaDescription: string;
+}
+
+export function getArticleSummaries(): ArticleSummary[] {
+  if (!fs.existsSync(ARTICLES_DIR)) return [];
+  return fs
+    .readdirSync(ARTICLES_DIR)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => {
+      try {
+        const a = JSON.parse(fs.readFileSync(path.join(ARTICLES_DIR, f), "utf-8")) as Article;
+        if (a.error) return null;
+        return { slug: a.slug, title: a.title, metaDescription: a.metaDescription };
+      } catch { return null; }
+    })
+    .filter(Boolean)
+    .sort((a, b) => a!.title.localeCompare(b!.title)) as ArticleSummary[];
+}
+
 export function getAllArticles(): Article[] {
   if (!fs.existsSync(ARTICLES_DIR)) return [];
   return fs
