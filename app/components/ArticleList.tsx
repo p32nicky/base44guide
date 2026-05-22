@@ -53,7 +53,7 @@ export default function ArticleList({ articles }: { articles: ArticleSummary[] }
     <div>
       {/* Heading */}
       <h2 className="text-2xl font-bold mb-4">
-        {articles.length} Base44 Articles &amp; Guides
+        Base44 Articles &amp; Guides
       </h2>
 
       {/* Categories */}
