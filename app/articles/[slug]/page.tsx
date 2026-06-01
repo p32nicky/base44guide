@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
     },
     alternates: {
-      canonical: `/articles/${slug}`,
+      canonical: `https://www.base44guide.io/articles/${slug}`,
     },
   };
 }
@@ -49,7 +49,7 @@ export default async function ArticlePage({ params }: Props) {
   if (!article) notFound();
   const related = getRelated(slug);
 
-  const SITE = "https://base44guide.com";
+  const SITE = "https://www.base44guide.io";
 
   const articleJsonLd = {
     "@context": "https://schema.org",

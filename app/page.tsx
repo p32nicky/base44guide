@@ -14,12 +14,12 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Base44 Guide",
-  url: "https://base44guide.com",
+  url: "https://www.base44guide.io",
   description:
     "Comprehensive guides, reviews, and tutorials for Base44 — the AI-powered no-code platform.",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://base44guide.com/?q={search_term_string}",
+    target: "https://www.base44guide.io/?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -28,8 +28,8 @@ const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Base44 Guide",
-  url: "https://base44guide.com",
-  logo: "https://base44guide.com/logo.png",
+  url: "https://www.base44guide.io",
+  logo: "https://www.base44guide.io/logo.png",
 };
 
 export default function HomePage() {
