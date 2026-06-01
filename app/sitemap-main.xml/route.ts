@@ -1,12 +1,15 @@
 import { getAllSlugs } from "@/lib/articles";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-static";
+
 export async function GET() {
-  const base = "https://base44site.vercel.app";
+  const base = "https://www.base44guide.io";
   const slugs = getAllSlugs();
 
   const urls = [
     { loc: base, priority: "1.0", changefreq: "weekly" },
+    { loc: `${base}/articles`, priority: "0.9", changefreq: "daily" },
     ...slugs.map((slug) => ({
       loc: `${base}/articles/${slug}`,
       priority: "0.8",
