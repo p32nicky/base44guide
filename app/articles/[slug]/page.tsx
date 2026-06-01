@@ -1,4 +1,4 @@
-import { getArticleBySlug, getAllSlugs } from "@/lib/articles";
+import { getArticleBySlug, getAllSlugs, getArticleSummaries } from "@/lib/articles";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -31,10 +31,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function getRelated(slug: string, count = 6) {
+  const all = getArticleSummaries().filter((a) => a.slug !== slug);
+  // seed shuffle deterministically by slug so it's stable across builds
+  const seed = slug.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  const shuffled = [...all].sort((a, b) => {
+    const ha = (seed * 1664525 + a.slug.length * 22695477) & 0x7fffffff;
+    const hb = (seed * 1664525 + b.slug.length * 22695477 + 1) & 0x7fffffff;
+    return ha - hb;
+  });
+  return shuffled.slice(0, count);
+}
+
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   if (!article) notFound();
+  const related = getRelated(slug);
 
   const SITE = "https://base44guide.com";
 
@@ -140,6 +153,26 @@ export default async function ArticlePage({ params }: Props) {
           </a>
           <p className="text-xs text-orange-200 mt-3">Free plan available. No credit card required.</p>
         </div>
+
+        {/* Related Articles — drives crawl budget */}
+        {related.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Related Base44 Guides</h2>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {related.map((r) => (
+                <a
+                  key={r.slug}
+                  href={`/articles/${r.slug}`}
+                  className="block p-4 border border-gray-200 rounded-xl hover:border-orange-300 hover:shadow-sm transition-all group"
+                >
+                  <p className="font-medium text-sm text-gray-900 group-hover:text-orange-600 leading-snug">
+                    {r.title}
+                  </p>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Back link */}
         <div className="mt-8 text-center">
