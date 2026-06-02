@@ -1,0 +1,13 @@
+{
+  "slug": "7-base44-features-you-didn-t-know-about",
+  "title": "7 Base44 Features You Didn't Know About",
+  "metaDescription": "Learn about 7 Base44 Features You Didn't Know About and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>7 Base44 Features You Didn't Know About</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-02T11:21:13.976Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99048, Requested 2303. Please try again in 19m27.264s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

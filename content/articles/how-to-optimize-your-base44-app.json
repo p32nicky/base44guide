@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How to Optimize Your Base44 App</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-06-01T05:19:59.843Z",
-  "error": "404 Model llama3.1-8b does not exist or you do not have access to it."
+  "generatedAt": "2026-06-02T11:09:57.192Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99831, Requested 2300. Please try again in 30m41.184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
 }
