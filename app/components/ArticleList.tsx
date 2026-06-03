@@ -69,16 +69,6 @@ export default function ArticleList({ articles }: { articles: ArticleSummary[] }
         ))}
       </div>
 
-      {/* Category page links for SEO */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        {CATEGORIES.map((cat) => (
-          <Link key={cat.slug} href={`/category/${cat.slug}`}
-            className="text-xs text-orange-500 hover:underline">
-            Browse all {cat.label} →
-          </Link>
-        ))}
-      </div>
-
       {/* Search */}
       <div className="relative mb-6">
         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-lg">🔍</span>
