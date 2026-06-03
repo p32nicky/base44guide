@@ -46,6 +46,7 @@ export interface ArticleSummary {
   slug: string;
   title: string;
   metaDescription: string;
+  generatedAt?: string;
 }
 
 export function getArticleSummaries(): ArticleSummary[] {
@@ -57,7 +58,7 @@ export function getArticleSummaries(): ArticleSummary[] {
       try {
         const a = JSON.parse(fs.readFileSync(path.join(ARTICLES_DIR, f), "utf-8")) as Article;
         if (a.error) return null;
-        return { slug: a.slug, title: a.title, metaDescription: a.metaDescription };
+        return { slug: a.slug, title: a.title, metaDescription: a.metaDescription, generatedAt: a.generatedAt };
       } catch { return null; }
     })
     .filter(Boolean)

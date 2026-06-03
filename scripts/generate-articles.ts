@@ -474,28 +474,8 @@ Article title: ${topic}`;
         });
         content = completion.choices[0]?.message?.content ?? "";
       } catch (groqErr: unknown) {
-        const msg = String(groqErr);
-        if (msg.includes("429") || msg.includes("rate_limit") || msg.includes("tokens per day")) {
-          console.log(`Groq quota hit -- switching to Cerebras for remaining articles`);
-          useGroq = false;
-        } else {
-          throw groqErr;
-        }
+        throw groqErr;
       }
-    }
-
-    // Use Cerebras if Groq quota hit or unavailable
-    if (!useGroq || !content) {
-      const completion = await cerebras.chat.completions.create({
-        model: "llama3.1-8b",
-        messages: [{ role: "user", content: prompt }],
-        max_tokens: 2000,
-        // @ts-ignore
-        temperature: 0.8,
-      });
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      content = ((completion as any).choices?.[0]?.message?.content as string) ?? "";
-      if (!useGroq) console.log(`[${index + 1}/500] Using Cerebras: ${topic}`);
     }
 
     // Extract meta description
@@ -550,23 +530,14 @@ Article title: ${topic}`;
 
 async function main() {
   const groqKey = process.env.GROQ_API_KEY;
-  const cerebrasKey = process.env.CEREBRAS_API_KEY;
 
-  if (!groqKey && !cerebrasKey) {
-    console.error("ERROR: Set GROQ_API_KEY and/or CEREBRAS_API_KEY");
+  if (!groqKey) {
+    console.error("ERROR: Set GROQ_API_KEY");
     process.exit(1);
   }
 
-  if (!groqKey) {
-    useGroq = false;
-    console.log("No Groq key -- using Cerebras only");
-  }
-  if (!cerebrasKey) {
-    console.log("No Cerebras key -- using Groq only (no fallback)");
-  }
-
-  const groq = new Groq({ apiKey: groqKey ?? "none" });
-  const cerebras = new Cerebras({ apiKey: cerebrasKey ?? "none" });
+  const groq = new Groq({ apiKey: groqKey });
+  const cerebras = null as any;
 
   fs.mkdirSync(path.join("content", "articles"), { recursive: true });
 

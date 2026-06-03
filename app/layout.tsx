@@ -5,16 +5,16 @@ import "./globals.css";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
-const SITE_URL = "https://base44guide.io";
+const SITE_URL = "https://www.base44guide.io";
 const GA_IDS = ["G-JH93VZ244D"];
 
 export const metadata: Metadata = {
   title: {
-    default: "Base44 Reviews & Guides — Build Apps Without Code",
+    default: "Base44 Guide — Reviews, Tutorials & No-Code App Building",
     template: "%s | Base44 Guide",
   },
   description:
-    "Comprehensive guides, reviews, and tutorials for Base44 — the AI-powered no-code platform that lets anyone build full-stack web apps without coding.",
+    "2,900+ guides on Base44 — the AI no-code app builder acquired by Wix. Reviews, how-to tutorials, comparisons, and industry use cases. Build apps without coding.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     siteName: "Base44 Guide",
@@ -61,15 +61,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <strong>Affiliate Disclosure:</strong> Base44 Guide is reader-supported. We may earn a commission when you purchase through our links, at no extra cost to you.
         </div>
         <main>{children}</main>
-        <footer className="border-t border-gray-100 mt-16 py-8 text-center text-sm text-gray-500">
-          <p>
-            Base44 Guide is an independent review site. We may earn a commission when you use our links.
-          </p>
-          <p className="mt-2 flex items-center justify-center gap-4">
-            <a href="/" className="underline hover:text-gray-700">All Articles</a>
-            <a href="/affiliate-disclosure" className="underline hover:text-gray-700">Affiliate Disclosure</a>
-            <a href="/privacy-policy" className="underline hover:text-gray-700">Privacy Policy</a>
-          </p>
+        <footer className="border-t border-gray-100 mt-16 py-10 text-sm text-gray-500">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+              <a href="/category/reviews" className="hover:text-orange-500">⭐ Reviews</a>
+              <a href="/category/how-to" className="hover:text-orange-500">🔧 How-To Guides</a>
+              <a href="/category/comparisons" className="hover:text-orange-500">⚖️ Comparisons</a>
+              <a href="/category/features" className="hover:text-orange-500">⚙️ Features</a>
+              <a href="/category/pricing" className="hover:text-orange-500">💰 Pricing & ROI</a>
+              <a href="/category/industry" className="hover:text-orange-500">🏭 Industry Guides</a>
+              <a href="/category/professions" className="hover:text-orange-500">👔 Professions</a>
+              <a href="/category/getting-started" className="hover:text-orange-500">🚀 Getting Started</a>
+              <a href="/category/wix-acquisition" className="hover:text-orange-500">🤝 Wix Acquisition</a>
+            </div>
+            <div className="border-t border-gray-100 pt-6 text-center">
+              <p>Base44 Guide is an independent review site. We may earn a commission when you use our links.</p>
+              <p className="mt-2 flex items-center justify-center gap-4">
+                <a href="/" className="underline hover:text-gray-700">All Articles</a>
+                <a href="/affiliate-disclosure" className="underline hover:text-gray-700">Affiliate Disclosure</a>
+                <a href="/privacy-policy" className="underline hover:text-gray-700">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
         </footer>
       </body>
     </html>
