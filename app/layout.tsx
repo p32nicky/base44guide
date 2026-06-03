@@ -6,6 +6,7 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 const SITE_URL = "https://www.base44guide.io";
+// metadataBase must match canonical domain exactly
 const GA_IDS = ["G-JH93VZ244D"];
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   },
   description:
     "2,900+ guides on Base44 — the AI no-code app builder acquired by Wix. Reviews, how-to tutorials, comparisons, and industry use cases. Build apps without coding.",
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL("https://www.base44guide.io"),
   openGraph: {
     siteName: "Base44 Guide",
     type: "website",
