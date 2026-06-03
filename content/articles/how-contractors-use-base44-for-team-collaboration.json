@@ -1,0 +1,13 @@
+{
+  "slug": "how-contractors-use-base44-for-team-collaboration",
+  "title": "How Contractors Use Base44 for Team Collaboration",
+  "metaDescription": "Learn about How Contractors Use Base44 for Team Collaboration and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How Contractors Use Base44 for Team Collaboration</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-03T10:44:00.470Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99708, Requested 1256. Please try again in 13m52.896s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
