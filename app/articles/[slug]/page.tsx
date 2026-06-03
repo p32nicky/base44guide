@@ -31,6 +31,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function extractFAQ(html: string): { question: string; answer: string }[] {
+  const faqs: { question: string; answer: string }[] = [];
+  // Match h2/h3 that look like questions, grab next <p>
+  const pattern = /<h[23][^>]*>(.*?\?)<\/h[23]>\s*<p[^>]*>([\s\S]*?)<\/p>/gi;
+  let match;
+  while ((match = pattern.exec(html)) !== null && faqs.length < 5) {
+    const question = match[1].replace(/<[^>]+>/g, "").trim();
+    const answer = match[2].replace(/<[^>]+>/g, "").trim().slice(0, 300);
+    if (question && answer) faqs.push({ question, answer });
+  }
+  return faqs;
+}
+
+function formatDate(iso: string) {
+  try {
+    return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  } catch { return ""; }
+}
+
 function getRelated(slug: string, count = 6) {
   const all = getArticleSummaries().filter((a) => a.slug !== slug);
   // seed shuffle deterministically by slug so it's stable across builds
@@ -48,6 +67,8 @@ export default async function ArticlePage({ params }: Props) {
   const article = getArticleBySlug(slug);
   if (!article) notFound();
   const related = getRelated(slug);
+  const faqs = extractFAQ(article.body);
+  const publishDate = article.generatedAt ? formatDate(article.generatedAt) : "";
 
   const SITE = "https://www.base44guide.io";
 
@@ -79,6 +100,16 @@ export default async function ArticlePage({ params }: Props) {
     ],
   };
 
+  const faqJsonLd = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  } : null;
+
   return (
     <>
       <script
@@ -89,6 +120,12 @@ export default async function ArticlePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <div className="max-w-3xl mx-auto px-4 py-12">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="text-sm text-gray-500 mb-6">
@@ -108,6 +145,13 @@ export default async function ArticlePage({ params }: Props) {
             </li>
           </ol>
         </nav>
+
+        {/* Publish date */}
+        {publishDate && (
+          <p className="text-xs text-gray-400 mb-4">
+            Published: <time dateTime={article.generatedAt}>{publishDate}</time>
+          </p>
+        )}
 
         {/* Per-article affiliate disclosure (FTC required) */}
         <p className="text-xs text-gray-500 bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 mb-6">
