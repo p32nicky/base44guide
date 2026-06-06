@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Script from "next/script";
+import ExitIntentPopup from "@/app/components/ExitIntentPopup";
 import "./globals.css";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
       </head>
       <body className="min-h-screen bg-white text-gray-900 antialiased">
+        <ExitIntentPopup />
         <header className="border-b border-gray-100 bg-white sticky top-0 z-10">
           <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="/" className="font-bold text-lg text-orange-500 hover:text-orange-600">
