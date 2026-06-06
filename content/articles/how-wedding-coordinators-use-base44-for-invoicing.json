@@ -1,0 +1,13 @@
+{
+  "slug": "how-wedding-coordinators-use-base44-for-invoicing",
+  "title": "How Wedding Coordinators Use Base44 for Invoicing",
+  "metaDescription": "Learn about How Wedding Coordinators Use Base44 for Invoicing and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How Wedding Coordinators Use Base44 for Invoicing</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-06T10:51:29.359Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 97893, Requested 2308. Please try again in 2m53.664s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
