@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How Jewelers Use Base44 for Payment Tracking</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-06-06T10:25:21.410Z",
-  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99708, Requested 2302. Please try again in 28m56.639999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+  "generatedAt": "2026-06-07T13:31:37.924Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99532, Requested 2302. Please try again in 26m24.575999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
 }

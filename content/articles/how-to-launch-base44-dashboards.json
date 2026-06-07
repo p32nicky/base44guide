@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How to Launch Base44 Dashboards</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-06-06T09:38:28.798Z",
-  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98356, Requested 2298. Please try again in 9m25.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+  "generatedAt": "2026-06-07T12:43:49.377Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98240, Requested 2298. Please try again in 7m44.832s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
 }

@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How Dermatologists Use Base44 for Reporting</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-06-06T10:32:26.354Z",
-  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99216, Requested 2302. Please try again in 21m51.552s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+  "generatedAt": "2026-06-07T13:38:53.467Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99028, Requested 2302. Please try again in 19m9.12s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
 }

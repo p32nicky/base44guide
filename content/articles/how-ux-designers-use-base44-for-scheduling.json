@@ -1,0 +1,13 @@
+{
+  "slug": "how-ux-designers-use-base44-for-scheduling",
+  "title": "How UX Designers Use Base44 for Scheduling",
+  "metaDescription": "Learn about How UX Designers Use Base44 for Scheduling and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How UX Designers Use Base44 for Scheduling</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-07T14:07:39.378Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99340, Requested 2304. Please try again in 23m40.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
