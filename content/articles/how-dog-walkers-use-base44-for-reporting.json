@@ -1,0 +1,13 @@
+{
+  "slug": "how-dog-walkers-use-base44-for-reporting",
+  "title": "How Dog Walkers Use Base44 for Reporting",
+  "metaDescription": "Learn about How Dog Walkers Use Base44 for Reporting and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How Dog Walkers Use Base44 for Reporting</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-09T10:48:18.342Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99478, Requested 2302. Please try again in 25m37.92s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
