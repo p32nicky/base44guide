@@ -1,0 +1,13 @@
+{
+  "slug": "how-athletic-trainers-use-base44-for-client-portal",
+  "title": "How Athletic Trainers Use Base44 for Client Portal",
+  "metaDescription": "Learn about How Athletic Trainers Use Base44 for Client Portal and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How Athletic Trainers Use Base44 for Client Portal</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-13T09:40:09.292Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99832, Requested 2304. Please try again in 30m45.504s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

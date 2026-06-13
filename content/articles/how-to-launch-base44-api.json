@@ -1,0 +1,13 @@
+{
+  "slug": "how-to-launch-base44-api",
+  "title": "How to Launch Base44 API",
+  "metaDescription": "Learn about How to Launch Base44 API and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How to Launch Base44 API</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-13T09:13:41.189Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99360, Requested 2296. Please try again in 23m50.784s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

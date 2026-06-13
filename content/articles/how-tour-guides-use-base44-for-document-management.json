@@ -1,0 +1,13 @@
+{
+  "slug": "how-tour-guides-use-base44-for-document-management",
+  "title": "How Tour Guides Use Base44 for Document Management",
+  "metaDescription": "Learn about How Tour Guides Use Base44 for Document Management and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How Tour Guides Use Base44 for Document Management</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-13T10:23:04.244Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99159, Requested 2302. Please try again in 21m2.304s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

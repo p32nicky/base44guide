@@ -1,0 +1,13 @@
+{
+  "slug": "how-bookkeepers-use-base44-for-client-portal",
+  "title": "How Bookkeepers Use Base44 for Client Portal",
+  "metaDescription": "Learn about How Bookkeepers Use Base44 for Client Portal and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How Bookkeepers Use Base44 for Client Portal</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-13T09:50:32.483Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99110, Requested 2302. Please try again in 20m19.968s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}

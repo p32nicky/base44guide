@@ -1,0 +1,13 @@
+{
+  "slug": "10-use-base44-to-grow-your-business",
+  "title": "10 Use Base44 to Grow Your Business",
+  "metaDescription": "Learn about 10 Use Base44 to Grow Your Business and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>10 Use Base44 to Grow Your Business</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-13T09:26:17.832Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98486, Requested 2301. Please try again in 11m19.968s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
