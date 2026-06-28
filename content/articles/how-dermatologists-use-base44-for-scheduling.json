@@ -1,0 +1,13 @@
+{
+  "slug": "how-dermatologists-use-base44-for-scheduling",
+  "title": "How Dermatologists Use Base44 for Scheduling",
+  "metaDescription": "Learn about How Dermatologists Use Base44 for Scheduling and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How Dermatologists Use Base44 for Scheduling</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-28T13:54:17.321Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98659, Requested 2304. Please try again in 13m52.031999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
