@@ -1,0 +1,13 @@
+{
+  "slug": "how-copywriters-use-base44-for-invoicing",
+  "title": "How Copywriters Use Base44 for Invoicing",
+  "metaDescription": "Learn about How Copywriters Use Base44 for Invoicing and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How Copywriters Use Base44 for Invoicing</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-06-30T23:47:51.210Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 97939, Requested 2304. Please try again in 3m29.952s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
