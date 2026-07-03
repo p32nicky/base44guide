@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Base44 Reviews & Guides — Build Apps Without Code",
   description:
     "500+ in-depth articles, reviews, and tutorials about Base44 — the AI no-code platform anyone can use to build full-stack web apps.",
+  alternates: {
+    canonical: "https://www.base44guide.io",
+  },
 };
 
 const AFFILIATE = "https://base44.pxf.io/c/2252709/2049275/25619?trafcat=base";
