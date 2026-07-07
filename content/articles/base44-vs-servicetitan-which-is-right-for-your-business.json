@@ -1,0 +1,13 @@
+{
+  "slug": "base44-vs-servicetitan-which-is-right-for-your-business",
+  "title": "Base44 vs ServiceTitan: Which Is Right for Your Business?",
+  "metaDescription": "Learn about Base44 vs ServiceTitan: Which Is Right for Your Business? and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Base44 vs ServiceTitan: Which Is Right for Your Business?</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-07-06T23:07:32.913Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98844, Requested 2309. Please try again in 16m36.192s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
