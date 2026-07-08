@@ -1,0 +1,13 @@
+{
+  "slug": "quick-start-launch-a-no-code-app-in-24-hours",
+  "title": "Quick Start: Launch a No-Code App in 24 Hours",
+  "metaDescription": "Learn about Quick Start: Launch a No-Code App in 24 Hours and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Quick Start: Launch a No-Code App in 24 Hours</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-07-08T02:17:02.197Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99373, Requested 2310. Please try again in 24m14.112s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
