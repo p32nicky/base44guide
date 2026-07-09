@@ -1,0 +1,13 @@
+{
+  "slug": "best-base44-features-for-sign-makers",
+  "title": "Best Base44 Features for Sign Makers",
+  "metaDescription": "Learn about Best Base44 Features for Sign Makers and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Best Base44 Features for Sign Makers</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-07-09T00:26:58.379Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99264, Requested 2300. Please try again in 22m31.296s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
