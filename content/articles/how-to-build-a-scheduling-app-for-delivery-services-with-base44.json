@@ -1,0 +1,13 @@
+{
+  "slug": "how-to-build-a-scheduling-app-for-delivery-services-with-base44",
+  "title": "How to Build a Scheduling App for Delivery Services with Base44",
+  "metaDescription": "Learn about How to Build a Scheduling App for Delivery Services with Base44 and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>How to Build a Scheduling App for Delivery Services with Base44</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-07-16T02:14:20.270Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99612, Requested 1376. Please try again in 14m13.632s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
