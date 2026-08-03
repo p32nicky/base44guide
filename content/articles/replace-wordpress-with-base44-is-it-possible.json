@@ -1,0 +1,13 @@
+{
+  "slug": "replace-wordpress-with-base44-is-it-possible",
+  "title": "Replace WordPress with Base44: Is It Possible?",
+  "metaDescription": "Learn about Replace WordPress with Base44: Is It Possible? and how Base44 helps you build apps without coding.",
+  "keywords": [
+    "Base44",
+    "no-code",
+    "app builder"
+  ],
+  "body": "<h1>Replace WordPress with Base44: Is It Possible?</h1><p>Content generation failed. Please retry.</p>",
+  "generatedAt": "2026-08-03T17:26:29.658Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98020, Requested 2303. Please try again in 4m39.072s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+}
