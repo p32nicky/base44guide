@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How to Build an Invoicing Tool for Makeup Artists with Base44</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-08-05T12:43:43.104Z",
-  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98257, Requested 2312. Please try again in 8m11.616s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+  "generatedAt": "2026-08-07T12:56:15.359Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 97850, Requested 2312. Please try again in 2m19.968s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
 }

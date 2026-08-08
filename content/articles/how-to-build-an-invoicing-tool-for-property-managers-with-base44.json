@@ -8,6 +8,6 @@
     "app builder"
   ],
   "body": "<h1>How to Build an Invoicing Tool for Property Managers with Base44</h1><p>Content generation failed. Please retry.</p>",
-  "generatedAt": "2026-08-05T22:46:31.580Z",
-  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99852, Requested 1295. Please try again in 16m31.007999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+  "generatedAt": "2026-08-08T02:00:52.687Z",
+  "error": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr6z3sjgecs8shrayk681re9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99291, Requested 2312. Please try again in 23m4.992s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
 }
